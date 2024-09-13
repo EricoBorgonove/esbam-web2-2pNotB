@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário Simples</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">Nome: </label>
+        <input type="text" value="Bruno" name="name" id="" />
+        <label for="sobrenome">Sobrenome: </label>
+        <input type="text" name="sobrenome" id=""  placeholder="Digite o seu sobrenome"/>
+      </div>
+      <div>
+        <label for="cpf">CPF: </label>
+        <input type="text" name="cpf" id="" />
+      </div>
+      <div>
+        <label for="celular">Celular: </label>
+        <input type="number" name="celular" id="" />
+      </div>
+      <div>
+        <label for="email">email: </label>
+        <input type="email" name="email" id="" />
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="" />
+      </div>
+      <div>
+        <label for="genero">Gênero: </label>
+        <input type="radio" name="genero" id="" /> Masculino
+        <input type="radio" name="genero" id="" /> Feminino
+        <input type="radio" name="genero" id="" /> Outros
+        <input type="text" disabled />
+      </div>
+      <div>
+        <h4>Gêneros Musicais</h4>
+        <input type="checkbox" name="" id="" checked> Rock
+        <input type="checkbox" name="" id=""> Sertanejo
+        <input type="checkbox" name="" id="" disabled> Funk
+      </div>
+      <div>
+        <label for="nascimento">Data Nascimento: </label>
+        <input type="date" name="" id="">
+      </div>
+      <div>
+        <label for="estado">Estado: </label>
+        <select name="" id="">
+            <option value="AM">Amazonas</option>
+            <option value="PA">Pará</option>
+            <option value="AP">Amapá</option>
+            <option value="RR">Roraima</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
