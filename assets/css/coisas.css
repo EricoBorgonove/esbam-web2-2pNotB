@@ -1,0 +1,30 @@
+p{
+    text-align: justify;
+}
+
+div{
+    background-color: aqua;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+div li{
+    color: blueviolet;
+}
+
+li, p{
+    color: brown;
+}
+ul{
+    text-align: center;
+}
+h1{
+    height: 50px;
+}
+.classe1 h1{
+    height: 30px;
+}
+.classe2{
+    width: 150px;
+} 
