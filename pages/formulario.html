@@ -6,7 +6,7 @@
     <title>Formulário Simples</title>
   </head>
   <body>
-    <form>
+    <div>
       <div>
         <label for="name">Nome: </label>
         <input type="text" value="Bruno" name="name" id="" />
@@ -28,11 +28,11 @@
         <input type="password" name="senha" id="" />
       </div>
       <div>
-        <label for="genero">Gênero: </label>
-        <input type="radio" name="genero" id="" /> Masculino
-        <input type="radio" name="genero" id="" /> Feminino
-        <input type="radio" name="genero" id="" /> Outros
-        <input type="text" disabled />
+        <label for="labelGeneros">Gênero: </label>
+        <input type="radio" name="generos" id="" /> Masculino
+        <input type="radio" name="generos" id="" /> Feminino
+        <input type="radio" name="generos" id="" /> Outros
+        <input type="text" id="outros" disabled />
       </div>
       <div>
         <h4>Gêneros Musicais</h4>
@@ -53,6 +53,7 @@
             <option value="RR">Roraima</option>
         </select>
       </div>
-    </form>
+    </div>
+    <script src="/assets/js/formulario.js"></script>
   </body>
 </html>
