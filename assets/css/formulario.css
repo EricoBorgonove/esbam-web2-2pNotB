@@ -1,0 +1,13 @@
+.classRed{
+    background-color: rgb(246, 214, 214);
+    color: red;
+    border:  1px solid red;
+}
+.spanRed{
+    color: red;
+}
+.classGreen{
+    background-color: rgb(200, 244, 200);
+    color: green;
+    border:  1px solid green;
+}

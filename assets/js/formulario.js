@@ -222,10 +222,13 @@ const paises = [
     { "nome": "São Paulo", "sigla": "SP" },
     { "nome": "Sergipe", "sigla": "SE" },
     { "nome": "Tocantins", "sigla": "TO" }
-  ]
+]
   
 const generos = document.getElementsByName("generos")
 let selectPais = document.getElementById("selectPais")
+let senha1 = document.getElementById("senha1")
+let senha2 = document.getElementById("senha2")
+
 function abrirOutros(){
     let outros = document.querySelector("#outros")
     if (generos[2].checked) {
@@ -265,8 +268,7 @@ function verEstados(){
     }
 }
 function togglePass(){
-    let senha1 = document.getElementById("senha1")
-    let senha2 = document.getElementById("senha2")
+
     let btnVer = document.getElementById("btnVer")
 
     if (senha1.type == "password" || senha2.type == "password"){
@@ -278,9 +280,21 @@ function togglePass(){
         senha2.type = "password"
         btnVer.textContent = "ver"
     }
-    
-
-
+}
+function comparePassword(){
+    if (senha1.value != senha2.value && senha2.value != ""){
+        senha1.classList.remove("classGreen")
+        senha2.classList.remove("classGreen")    
+        senha1.classList.add("classRed")
+        senha2.classList.add("classRed")
+    }else{
+        senha1.classList.remove("classRed")
+        senha2.classList.remove("classRed")
+        if (senha1.value === senha2.value && senha2.value != ""){
+            senha1.classList.add("classGreen")
+            senha2.classList.add("classGreen")
+        }
+    }
 }
 
 generos.forEach ( genero => {
@@ -288,5 +302,6 @@ generos.forEach ( genero => {
 })
 verPaises()
 selectPais.addEventListener("click", verEstados)
-
+senha1.addEventListener("input", comparePassword)
+senha2.addEventListener("input", comparePassword)
 
