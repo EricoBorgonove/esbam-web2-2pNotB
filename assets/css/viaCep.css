@@ -1,0 +1,21 @@
+body{
+    background-color: rgba(138, 43, 226,0.1);
+}
+button{
+    padding: 5px 15px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: none;
+}
+button:hover{
+    color: blueviolet;
+    background-color: transparent;
+    border: 1px solid blueviolet;
+}
+div{
+    margin: 5px;
+}
+h2{
+    text-align: center;
+}
